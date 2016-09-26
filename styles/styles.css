@@ -1,0 +1,69 @@
+@import url(layout.css);
+
+@font-face {
+    font-family: "AnticSlab-Regular";
+    src: url(../fonts/AnticSlab-Regular.ttf);}
+
+* {
+    font-family: AnticSlab-Regular;}
+
+
+/* BACKGROUND */ 
+body {
+    background-color: black;
+    background-image: url(../images/background_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;}
+
+
+/* NAV */
+nav {
+    background-color: hsla(0,100%,100%,0.4);}
+
+li.active {
+    background-color: hsla(0,0%,0%, 0.2);}
+
+li.nav-element:hover {
+    background-color: hsla(0,0%,100%, 0.2);}
+
+a.nav-element {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;}
+
+/* NAV END*/
+
+
+/* SOCIAL */
+a.social-icon path {
+    fill: hsl(0,0%, 10%);}
+
+a.social-icon:hover path {
+    fill: hsl(0, 0%, 95%);}
+
+/* SOCIAL END*/
+
+
+/* BANNER */
+#banner {
+    background-color: hsl(0, 0%, 20%);}
+
+#banner>h1, #banner>p {
+    color:white;}
+
+#banner>h1 {
+    font-size: 48px}
+
+#banner>p {
+    font-style: italic;
+    font-size: 18px;}
+
+/* BANNER END*/
+
+/* CONTENT */
+#content {
+    background-color:black;
+    color: hsl(0,0%,80%);}
+
+a {
+    color: hsl(0,0%,95%);}
