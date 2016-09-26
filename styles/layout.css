@@ -1,8 +1,7 @@
 body {
-    margin-top: 0px;}
+    margin: 0px 8px;}
 
 #page {
-    min-width: 750px;
     max-width: 1100px;
     margin: 0 auto;
     overflow: auto;}
@@ -29,11 +28,12 @@ a.social-icon {
     float: right;
     margin: 18px 20px 18px 0px;}
 
-.first {
+a.first, li.first {
     margin-left: 0;}
 
+
 /* mobile devices */
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
     #page {
         min-width: 320px;}
     
@@ -58,7 +58,9 @@ a.social-icon {
         margin: 0;}
     
 }
+
 /* NAVBAR END*/
+
 
 #banner {
     padding: 65px;
@@ -67,12 +69,13 @@ a.social-icon {
 
 
 /* CONTENT */
-p:first-child {
+#content p:first-child {
     margin-top: 0;
     padding-top: 7px;}
 
-p:last-child {
-    padding-bottom: 10px;}
+#content p:last-child {
+    padding-bottom: 10px;
+    margin-bottom: 0;}
 
 .imageLicense {
     margin-left: 20px;}
@@ -80,6 +83,49 @@ p:last-child {
 .imageLicense img {
     width: 100%;
     max-width: 800px;}
+
+/*CONTENT END*/
+
+
+/* FOOTER */
+footer {
+    bottom: 0px;
+    width: 100%;
+    padding: 0;}
+
+#footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 14px 8px 14px 8px}
+
+footer p {
+    float: left;
+    margin: 0;}
+
+footer a {
+    margin: 0 10px;
+    float: right;}
+
+@media (max-width: 560px) {
+    footer {
+        text-align: center;}
+    
+    footer a, footer p {
+        clear: both;
+        float: none;
+        display: block;}
+    
+    footer p {
+        margin-top: 10px;
+    }
+}
+
+/* FOOTER END */
+
+
+
+
 
 
 

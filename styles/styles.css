@@ -60,10 +60,27 @@ a.social-icon:hover path {
 
 /* BANNER END*/
 
+
 /* CONTENT */
 #content {
     background-color:black;
     color: hsl(0,0%,80%);}
 
-a {
+#content a, footer a {
     color: hsl(0,0%,95%);}
+
+#content a:hover, footer a:hover{
+    color: hsl(0,0%,78%);}
+
+/* CONTENT END */
+
+
+/* FOOTER */
+footer {
+    background-color: hsla(0,100%,0%,0.4);
+    font-size: 90%;}
+
+footer p {
+    color: hsl(0,0%,95%);}
+
+/* FOOTER END */
