@@ -12,12 +12,12 @@ nav {
 
 .navbar {
     float: left;
-    padding: 20px 0;
-    margin: 0;}
+    padding: 0px;
+    margin: 22px 0;}
   
 li.nav-element {
     display: inline;
-    padding: 24px;
+    padding: 22px;
     margin: -2.4px;
     border-collapse: collapse;}
 
@@ -49,13 +49,14 @@ a.first, li.first {
     .navbar {
         float: none;
         text-align: center;
-        padding: 0;}
+        padding: 0;
+        margin: 0}
     
     .social {
         float: none;
         text-align: center;
-        padding-bottom: 16px;
-        padding-top: 16px;
+        padding-bottom: 15px;
+        padding-top: 19px;
         margin: 0;}
     
 }
