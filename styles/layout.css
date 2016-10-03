@@ -34,8 +34,6 @@ a.first, li.first {
 
 /* mobile devices */
 @media (max-width: 750px) {
-    #page {
-        min-width: 320px;}
     
     nav {
         height: auto;
@@ -71,7 +69,9 @@ a.first, li.first {
     overflow: none;}
 
 
-/* CONTENT */
+/* --- CONTENT --- */
+
+/* image licenses */
 #content p:first-child {
     margin-top: 0;
     padding-top: 7px;}
@@ -80,14 +80,70 @@ a.first, li.first {
     padding-bottom: 10px;
     margin-bottom: 0;}
 
-.imageLicense {
-    margin-left: 20px;}
+article.imageLicense {
+    margin-left: 20px;
+    overflow: none;}
 
 .imageLicense img {
     width: 100%;
     max-width: 800px;}
 
-/*CONTENT END*/
+
+/* BEAT LICENSES */
+article#beat-licensing {
+    overflow: auto;
+    text-align: center;
+    margin: 0;}
+
+div.license {
+    width: 28%;
+    margin: 1% ;
+    float: left;
+    text-align: center;}
+
+div.license:first-child {
+    margin-left: 5.7777%;}
+
+div.license h3 {
+    margin: 0 0 3px 0;}
+
+
+div.license-heading {
+    padding: 10px;}
+
+div.license ul {
+    list-style: none;
+    padding: 0 10px;}
+
+div.license li {
+    margin-bottom: 20px;}
+
+li.price {
+    padding: 15px 10px 0px 10px;}
+
+div.exclusive-rights {
+    text-align: center;
+    clear: both;
+    display: block;
+    width: 87.333333%;
+    margin: 10px auto;
+    padding: 5px;}
+
+/* mobile devices */
+@media (max-width: 560px) {
+    
+    div.license, div.license:first-child {
+        clear: both;
+        width: 90%;
+        margin: 10px 5%;}
+    
+    div.exclusive-rights {
+        width: 88%;}
+    
+}
+/* BEAT LICENSES END */
+
+/* --- CONTENT END --- */
 
 
 /* FOOTER */
@@ -110,7 +166,9 @@ footer a {
     margin: 0 10px;
     float: right;}
 
+/* mobile devices */
 @media (max-width: 560px) {
+    
     footer {
         text-align: center;}
     

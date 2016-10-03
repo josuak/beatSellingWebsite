@@ -63,8 +63,33 @@ a.social-icon:hover path {
 
 /* CONTENT */
 #content {
-    background-color:black;
-    color: hsl(0,0%,80%);}
+    background-color: hsla(0,100%,0%,0.6);
+    color: hsl(0,0%,87%);}
+
+div.license {
+    border: solid thin hsl(0,0%,85%);}
+
+div.license-heading {
+    background-color: hsl(0, 0%, 20%);
+    color: white;}
+
+div.license-heading h3 {
+    letter-spacing: .05em;}
+
+div.license-heading span {
+    color: hsl(0, 0%, 80%);}
+
+del {
+    color: hsl(0,0%,70%);}
+
+li.price {
+    font-family: monospace;
+    font-size: 140%;
+    font-weight: bold;
+    letter-spacing: .1em;}
+
+.exclusive-rights {
+    border: solid thin;}
 
 #content a, footer a {
     color: hsl(0,0%,95%);}
