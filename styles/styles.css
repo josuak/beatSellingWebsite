@@ -67,12 +67,13 @@ a.social-icon:hover path {
     color: hsl(0,0%,90%);}
 
 div.license {
-    border: solid thin hsl(0,0%,85%);}
-
+    box-shadow: inset 0 0 0 1px hsl(0,0%,80%);}
+    
 div.license-heading {
     background-color: hsl(0, 0%, 20%);
+    box-shadow: inset 0 0 0 1px hsl(0,0%,80%);
     color: white;}
-
+    
 div.license-heading h3 {
     letter-spacing: .05em;}
 
@@ -89,7 +90,7 @@ li.price {
     letter-spacing: .1em;}
 
 .exclusive-rights {
-    border: solid thin;}
+    box-shadow: inset 0 0 0 1px hsl(0,0%,80%);}
 
 #content a, footer a {
     color: hsl(0,0%,95%);}

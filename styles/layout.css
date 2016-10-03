@@ -93,19 +93,21 @@ article.imageLicense {
 article#beat-licensing {
     overflow: auto;
     text-align: center;
-    margin: 0;}
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;}
 
 div.license {
-    width: 28%;
-    margin: 1% ;
+    width: 32%;
+    margin: 1%;
     float: left;
     text-align: center;}
 
 div.license:first-child {
-    margin-left: 5.7%;}
+    margin-left: 0%;}
 
 div.license:nth-child(3) {
-    margin-right: 5.7%;}
+    margin-right: 0%;}
 
 div.license h3 {
     margin: 0 0 3px 0;}
@@ -128,21 +130,18 @@ div.exclusive-rights {
     text-align: center;
     clear: both;
     display: block;
-    width: 87.333333%;
-    margin: 10px auto;
-    padding: 5px;}
+    padding: 1%;
+    width: 98%;
+    margin-bottom: 10px;}
 
 /* mobile devices */
 @media (max-width: 560px) {
     
-    div.license, div.license:first-child {
+    div.license, div.license:first-child, div.license:nth-child(3) {
         clear: both;
-        width: 90%;
-        margin: 10px 5%;}
-    
-    div.exclusive-rights {
-        width: 88%;}
-    
+        width: 100%;
+        margin: 10px 0;}
+
 }
 /* BEAT LICENSES END */
 
