@@ -64,7 +64,7 @@ a.social-icon:hover path {
 /* CONTENT */
 #content {
     background-color: hsla(0,100%,0%,0.6);
-    color: hsl(0,0%,87%);}
+    color: hsl(0,0%,90%);}
 
 div.license {
     border: solid thin hsl(0,0%,85%);}
@@ -94,8 +94,8 @@ li.price {
 #content a, footer a {
     color: hsl(0,0%,95%);}
 
-#content a:hover, footer a:hover{
-    color: hsl(0,0%,78%);}
+#content a:hover, footer a:hover, a.active {
+    color: hsl(0,0%,75%);}
 
 /* CONTENT END */
 

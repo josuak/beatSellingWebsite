@@ -102,7 +102,10 @@ div.license {
     text-align: center;}
 
 div.license:first-child {
-    margin-left: 5.7777%;}
+    margin-left: 5.7%;}
+
+div.license:nth-child(3) {
+    margin-right: 5.7%;}
 
 div.license h3 {
     margin: 0 0 3px 0;}
