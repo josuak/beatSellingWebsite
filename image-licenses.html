@@ -6,15 +6,35 @@
 </head>
 <body>
 <div id="page">
-    <header>
-        
-        
+     <header>
+        <!-- MOBILE NAV SWITCH -->
+        <div id="nav-toggle-wrapper">
+            <label for="nav-toggle" id="nav-toggle-switch" class="normal" onclick="toggleSwitch()">
+                <span></span>
+            </label>
+        </div>
+        <script>
+            function toggleSwitch (){
+                if(document.getElementById("nav-toggle-switch").className == "normal"){
+                    document.getElementById("nav-toggle-switch").className = "active"
+                    
+                } else {
+                    document.getElementById("nav-toggle-switch").className = "normal"
+                }
+            }
+            
+            function toggleNav (){
+                    document.getElementById("nav-toggle").checked = false;
+            }
+        </script>
+        <input type="checkbox" id="nav-toggle"/>
+        <!-- MOBILE NAV SWITCH END -->
         <nav>
             <ul class="navbar">
-                <a href="index.html#banner"><li class="nav-element">Shop</li></a>
-                <a href="index.html#beat-licensing"><li class="nav-element">Licensing</li></a>
-                <a href="#"><li class="nav-element">Music Releases</li></a>
-                <a href="#"><li class="nav-element">About</li></a>
+                <a href="index.html#banner" onclick="toggleNav(); toggleSwitch();"><li class="nav-element active">Shop</li></a>
+                <a href="index.html#beat-licensing" onclick="toggleNav(); toggleSwitch();"><li class="nav-element">Licensing</li></a>
+                <a href="#"><li class="nav-element" onclick="toggleNav(); toggleSwitch();">Music Releases</li></a>
+                <a href="#"><li class="nav-element" onclick="toggleNav(); toggleSwitch();">About</li></a>
             </ul> 
             
             <div class="social">
@@ -65,10 +85,17 @@
                         c-0.5,0.8-0.7,2.1-0.7,3c0,5.4,4.4,9.7,9.7,9.7c5.4,0,9.7-4.4,9.7-9.7c0-0.9-0.1-2.3-0.8-3h4v15C29,28.6,28.6,29,28,29z"/>
                     </svg></a>
             </div>
-        </nav>   
+        </nav>
+
+        <div id="banner">
+            <h1>Focus on the music.</h1>
+            <p>prodbyjozu.com</p>
+        </div>
+        
+        
     </header>
     
-    
+
     <div id="content">
         <article class="imageLicense">
             <p>This picture was used as the background image:</p>

@@ -7,14 +7,34 @@
 <body>
 <div id="page">
     <header>
-        
-        
+        <!-- MOBILE NAV SWITCH -->
+        <div id="nav-toggle-wrapper">
+            <label for="nav-toggle" id="nav-toggle-switch" class="normal" onclick="toggleSwitch()">
+                <span></span>
+            </label>
+        </div>
+        <script>
+            function toggleSwitch (){
+                if(document.getElementById("nav-toggle-switch").className == "normal"){
+                    document.getElementById("nav-toggle-switch").className = "active"
+                    
+                } else {
+                    document.getElementById("nav-toggle-switch").className = "normal"
+                }
+            }
+            
+            function toggleNav (){
+                    document.getElementById("nav-toggle").checked = false;
+            }
+        </script>
+        <input type="checkbox" id="nav-toggle"/>
+        <!-- MOBILE NAV SWITCH END -->
         <nav>
             <ul class="navbar">
-                <a href="index.html#banner"><li class="nav-element active">Shop</li></a>
-                <a href="index.html#beat-licensing"><li class="nav-element">Licensing</li></a>
-                <a href="#"><li class="nav-element">Music Releases</li></a>
-                <a href="#"><li class="nav-element">About</li></a>
+                <a href="index.html#banner" onclick="toggleNav(); toggleSwitch();"><li class="nav-element active">Shop</li></a>
+                <a href="index.html#beat-licensing" onclick="toggleNav(); toggleSwitch();"><li class="nav-element">Licensing</li></a>
+                <a href="#"><li class="nav-element" onclick="toggleNav(); toggleSwitch();">Music Releases</li></a>
+                <a href="#"><li class="nav-element" onclick="toggleNav(); toggleSwitch();">About</li></a>
             </ul> 
             
             <div class="social">
