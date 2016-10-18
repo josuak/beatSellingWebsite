@@ -9,32 +9,17 @@
     <header>
         <!-- MOBILE NAV SWITCH -->
         <div id="nav-toggle-wrapper">
-            <label for="nav-toggle" id="nav-toggle-switch" class="normal" onclick="toggleSwitch()">
+            <div id="nav-toggle-switch" class="normal" onclick="navSwitchToggle(); navToggle();">
                 <span></span>
-            </label>
+            </div>
         </div>
-        <script>
-            function toggleSwitch (){
-                if(document.getElementById("nav-toggle-switch").className == "normal"){
-                    document.getElementById("nav-toggle-switch").className = "active"
-                    
-                } else {
-                    document.getElementById("nav-toggle-switch").className = "normal"
-                }
-            }
-            
-            function toggleNav (){
-                    document.getElementById("nav-toggle").checked = false;
-            }
-        </script>
-        <input type="checkbox" id="nav-toggle"/>
         <!-- MOBILE NAV SWITCH END -->
-        <nav>
+        <nav id="nav" class="hidden">
             <ul class="navbar">
-                <a href="index.html#banner" onclick="toggleNav(); toggleSwitch();"><li class="nav-element active">Shop</li></a>
-                <a href="index.html#beat-licensing" onclick="toggleNav(); toggleSwitch();"><li class="nav-element">Licensing</li></a>
-                <a href="#"><li class="nav-element" onclick="toggleNav(); toggleSwitch();">Music Releases</li></a>
-                <a href="#"><li class="nav-element" onclick="toggleNav(); toggleSwitch();">About</li></a>
+                <a href="index.html#banner" onclick="navSwitchToggle(); navToggle();"><li class="nav-element active">Shop</li></a>
+                <a href="index.html#beat-licensing" onclick="navSwitchToggle(); navToggle();"><li class="nav-element">Licensing</li></a>
+                <a href="#"><li class="nav-element" onclick="navSwitchToggle(); navToggle();">Music Releases</li></a>
+                <a href="#"><li class="nav-element" onclick="navSwitchToggle(); navToggle();">About</li></a>
             </ul> 
             
             <div class="social">
@@ -194,4 +179,5 @@
     </footer>
 </div>   
 </body>
+<script src="js/mobile-nav.js"></script>
 </html>
