@@ -152,7 +152,7 @@ article {
     width: 90%;
     margin: 0 auto;}
 
-div.p-border {
+div.border {
     text-align: center;
     clear: both;
     display: block;
@@ -161,18 +161,7 @@ div.p-border {
     margin-bottom: 10px;}
 
 /* image licenses */
-
-#content p:first-child {
-    margin-top: 0;
-    padding-top: 7px;}
-
-#content p:last-child {
-    padding-bottom: 10px;
-    margin-bottom: 0;}
-
 article.imageLicense {
-    margin: 0 15px;
-    overflow: none;
     text-align: left;}
 
 .imageLicense img {
@@ -196,7 +185,6 @@ div.license:nth-child(3) {
 div.license h3 {
     margin: 0 0 3px 0;}
 
-
 div.license-heading {
     padding: 10px;}
 
@@ -218,6 +206,15 @@ li.full-terms {
         clear: both;
         width: 100%;
         margin: 10px 0;}
+    
+    p {
+        clear: both;
+        width: 100%;}
+    
+    img {
+        clear: both;
+        width: 100%;
+        height: 100%;}
 
 }
 /* BEAT LICENSES END */

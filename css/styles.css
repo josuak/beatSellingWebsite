@@ -18,27 +18,27 @@ body {
 
 /* NAV */
 nav {
-    background: hsla(0,0%,100%, 0.4);}
+    background: hsla(0,0%,100%, .4);}
 
 li.active {
     background: hsla(0,0%,0%, 0.2);}
 
-li.nav-element {
+.nav-element {
     transition: background 125ms ease-in-out;}
 
-li.nav-element:hover {
+.nav-element:hover {
     background: hsla(0,0%,100%, 0.2);}
 
-ul.navbar a {
+.navbar a {
     text-decoration: none;
     font-size: 20px;
     color: black;}
 
-a.social-icon path {
+.social-icon path {
     fill: hsl(0, 0%, 8%);
     transition: fill 125ms ease-in-out;}
 
-a.social-icon:hover path {
+.social-icon:hover path {
     fill: hsl(0, 0%, 95%);}
 
 
@@ -53,24 +53,24 @@ a.social-icon:hover path {
     nav {
         background: hsla(0, 0%, 0%, 0.7);}
         
-    ul.navbar a {
+    .navbar a {
         color: hsl(0, 0%, 100%)}
     
-    li.nav-element:hover {
+    .nav-element:hover {
         background: hsla(0, 0%, 100%, 0.1);}
     
     li.active {
         background: transparent;}
     
-    a.social-icon path {
+    .social {
+        border-top: thin solid hsl(0,0%, 80%);}
+    
+    .social-icon path {
         fill: hsl(0, 0%, 80%);
         transition: fill 125ms ease-in-out;}
     
-    a.social-icon:hover path {
+    .social-icon:hover path {
         fill: hsl(0, 0%, 30%);}
-    
-    .social {
-        border-top: thin solid hsl(0,0%, 80%);}
 }
 /* NAV END*/
 
@@ -78,7 +78,9 @@ a.social-icon:hover path {
 
 /* BANNER */
 #banner {
-    background-color: hsl(0, 0%, 20%);}
+    background-color: hsl(0, 0%, 20%);
+    background-image: url(../images/shop_banner_bg.jpg);
+    background-size: cover;}
 
 #banner>h1, #banner>p {
     color:white;}
@@ -86,17 +88,42 @@ a.social-icon:hover path {
 #banner>h1 {
     font-size: 48px;}
 
+#banner h1 span {
+    filter: blur(1px);}
+
 #banner>p {
     font-style: italic;
     font-size: 18px;}
+
+@media (max-width: 560px){
+    #banner {
+        background-image: url(../images/shop_banner_bg_mobile.jpg)}
+
+}
 
 /* BANNER END*/
 
 
 /* CONTENT */
 #content {
+    /* .4 */
     background-color: hsla(0,0%,0%,.4);
     color: hsl(0,0%,90%);}
+
+#content a, footer a {
+    color: hsl(0,0%,95%);}
+
+#content a:hover, footer a:hover, a.active {
+    color: hsl(0,0%,75%);}
+
+del {
+    color: hsl(0,0%,70%);}
+
+b {
+    letter-spacing: .05em;}
+
+.border {
+    box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
 
 div.license {
     box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
@@ -110,21 +137,6 @@ div.license-heading h3 {
 
 div.license-heading span {
     color: hsl(0, 0%, 80%);}
-
-del {
-    color: hsl(0,0%,70%);}
-
-.p-border {
-    box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
-
-#content a, footer a {
-    color: hsl(0,0%,95%);}
-
-#content a:hover, footer a:hover, a.active {
-    color: hsl(0,0%,75%);}
-
-b {
-    letter-spacing: .05em;}
 
 /* CONTENT END */
 
