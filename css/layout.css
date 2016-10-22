@@ -139,7 +139,7 @@ a:first-child > li.nav-element, a.first{
 
 
 #banner {
-    padding: 65px;
+    padding: 65px 10px;
     text-align: center;
     overflow: none;}
 
@@ -169,7 +169,7 @@ article.imageLicense {
     max-width: 800px;}
 
 
-/* BEAT LICENSES */
+/* beat licenses */
 div.license {
     width: 32%;
     margin: 1%;
@@ -217,7 +217,22 @@ li.full-terms {
         height: 100%;}
 
 }
-/* BEAT LICENSES END */
+/* beat licenses end */
+
+
+/* about page */
+.heading {
+    padding: 65px 10px;
+    text-align: center;}
+
+article.about {
+    text-align: left;
+    padding: 0 20px;
+    margin: 15px auto;}
+
+#heading-story {
+    margin-top: 45px;}
+
 
 /* --- CONTENT END --- */
 

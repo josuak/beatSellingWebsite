@@ -77,27 +77,35 @@ li.active {
 
 
 /* BANNER */
-#banner {
-    background-color: hsl(0, 0%, 20%);
-    background-image: url(../images/shop_banner_bg.jpg);
-    background-size: cover;}
+#banner-bg {
+     background: url(../images/shop_banner_bg.jpg) 45% 50%;}
 
-#banner>h1, #banner>p {
-    color:white;}
+#banner {
+    background-color: hsla(0, 0%, 0%, 0);
+    background-size: cover;
+    color: white;}
 
 #banner>h1 {
     font-size: 48px;}
 
 #banner h1 span {
-    filter: blur(1px);}
+    filter: blur(0px);
+    transition: 300ms filter ease-in-out;}
 
-#banner>p {
+#banner:hover h1 span {
+    filter: blur(2px);}
+
+#banner p {
     font-style: italic;
-    font-size: 18px;}
+    font-size: 18px;
+    transition: 300ms filter ease-in-out;}
+
+#banner:hover p {
+    filter: blur(2px);}
 
 @media (max-width: 560px){
-    #banner {
-        background-image: url(../images/shop_banner_bg_mobile.jpg)}
+    #banner-bg {
+        background: url(../images/shop_banner_bg_mobile.jpg) 0% 50%}
 
 }
 
@@ -125,6 +133,7 @@ b {
 .border {
     box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
 
+/* beat licenses */
 div.license {
     box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
     
@@ -137,6 +146,31 @@ div.license-heading h3 {
 
 div.license-heading span {
     color: hsl(0, 0%, 80%);}
+
+/* beat licenses end */
+
+/* about page */
+#heading-about-bg {
+    background: url(../images/heading_about_bg.jpg) 65% 50%;
+    background-repeat: no-repeat;}
+
+#heading-story-bg {
+    background: url(../images/heading_story_bg.jpg) 65% 50%;
+    background-repeat: no-repeat;}
+
+.heading {
+    background-color: hsla(0, 0%, 0%, .1);}
+
+.heading h1 {
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: .1em}
+
+.about {
+    border: thin solid white;
+    font-size: 18px;}
+
+/* about page end*/
 
 /* CONTENT END */
 
