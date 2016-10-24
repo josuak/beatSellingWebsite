@@ -78,11 +78,11 @@ li.active {
 
 /* BANNER */
 #banner-bg {
-     background: url(../images/shop_banner_bg.jpg) 45% 50%;}
+    background: url(../images/shop_banner_bg_2.jpg) 45% 50%;
+    background-size: cover;}
 
 #banner {
     background-color: hsla(0, 0%, 0%, 0);
-    background-size: cover;
     color: white;}
 
 #banner>h1 {
@@ -105,7 +105,8 @@ li.active {
 
 @media (max-width: 560px){
     #banner-bg {
-        background: url(../images/shop_banner_bg_mobile.jpg) 0% 50%}
+        background: url(../images/shop_banner_bg_mobile.jpg) 0% 50%;
+        background-size: cover;}
 
 }
 
@@ -152,11 +153,13 @@ div.license-heading span {
 /* about page */
 #heading-about-bg {
     background: url(../images/heading_about_bg.jpg) 65% 50%;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    background-size: cover;}
 
 #heading-story-bg {
     background: url(../images/heading_story_bg.jpg) 65% 50%;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    background-size: cover;}
 
 .heading {
     background-color: hsla(0, 0%, 0%, .1);}
