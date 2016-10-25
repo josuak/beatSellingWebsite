@@ -149,6 +149,9 @@ a:first-child > li.nav-element, a.first{
 
 
 /* --- CONTENT --- */
+section {
+    padding: 15px 0 5px 0;}
+
 article {
     overflow: auto;
     text-align: center;
@@ -156,7 +159,7 @@ article {
     width: 90%;
     margin: 0 auto;}
 
-div.border {
+.border {
     text-align: center;
     clear: both;
     display: block;
@@ -175,29 +178,29 @@ article.imageLicense {
 
 
 /* beat licenses */
-div.license {
+.license {
     width: 32%;
-    margin: 1%;
+    margin: 0 1% 10px 1%;
     float: left;
     text-align: center;}
 
-div.license:first-child {
+.license:first-child {
     margin-left: 0%;}
 
-div.license:nth-child(3) {
+.license:nth-child(3) {
     margin-right: 0%;}
 
-div.license h3 {
+.license h3 {
     margin: 0 0 3px 0;}
 
-div.license-heading {
+.license-heading {
     padding: 10px;}
 
-div.license ul {
+.license ul {
     list-style: none;
     padding: 0 10px;}
 
-div.license li {
+.license li {
     margin-bottom: 20px;}
 
 li.full-terms {
@@ -222,23 +225,16 @@ li.full-terms {
         height: 100%;}
 
 }
-/* beat licenses end */
-
 
 /* about page */
 .heading {
     padding: 65px 10px;
     text-align: center;}
 
-article.about {
+.about .border {
     text-align: left;
-    padding: 0 16px;
-    margin: 15px auto;
-    width: calc(90% - 21px);}
-
-#heading-story {
-    margin-top: 45px;}
-
+    font-size: 18px;
+    padding: 0 15px;}
 
 /* --- CONTENT END --- */
 
