@@ -24,6 +24,7 @@ li.active {
     background: hsla(0,0%,0%, 0.2);}
 
 .nav-element {
+    -webkit-transition: background 125ms ease-in-out;
     transition: background 125ms ease-in-out;}
 
 .nav-element:hover {
@@ -36,6 +37,7 @@ li.active {
 
 .social-icon path {
     fill: hsl(0, 0%, 8%);
+    -webkit-transition: fill 125ms ease-in-out;
     transition: fill 125ms ease-in-out;}
 
 .social-icon:hover path {
@@ -67,6 +69,7 @@ li.active {
     
     .social-icon path {
         fill: hsl(0, 0%, 80%);
+        -webkit-transition: fill 125ms ease-in-out;
         transition: fill 125ms ease-in-out;}
     
     .social-icon:hover path {
@@ -90,15 +93,18 @@ h1 {
     color: white;}
 
 #banner h1 span {
+    -webkit-filter: blur(0px);
     filter: blur(0px);
     transition: 300ms filter ease-in-out;}
 
 #banner:hover h1 span {
+    -webkit-filter: blur(2px);
     filter: blur(2px);}
 
 #banner p {
     font-style: italic;
     font-size: 18px;
+    -webkit-transition: 300ms filter ease-in-out;
     transition: 300ms filter ease-in-out;}
 
 #banner:hover p {

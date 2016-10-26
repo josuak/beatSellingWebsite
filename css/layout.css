@@ -52,6 +52,7 @@ a:first-child > li.nav-element, a.first{
         z-index: 2;}
     
     #nav-toggle-switch {
+        display: -webkit-flex;
         display: flex;
         position: absolute;
         top: 10px;
@@ -59,10 +60,12 @@ a:first-child > li.nav-element, a.first{
         width: 30px;
         height: 30px;
         background: none;
+        -webkit-align-items: center;
         align-items: center;
         cursor: pointer;}
     
     #nav-toggle-switch span, #nav-toggle-switch span:before, #nav-toggle-switch span:after {
+        -webkit-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;}
     
     #nav-toggle-switch span {
@@ -91,31 +94,35 @@ a:first-child > li.nav-element, a.first{
         background: transparent;}
     
     #nav-toggle-switch.active span:before {
+        -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         top: 0px;}
     
     #nav-toggle-switch.active span:after {
+        -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         top: -2px;}
     
     nav {
         height: 100%;
+        overflow: auto;
         position: fixed;
+        top: 50px;
         width: 240px;
-        top: 70;
         transition: all 300ms ease-in-out;
         z-index: 2;}
     
+    #nav-inner-wrapper {
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        padding-bottom: 50px;}
+
     nav.visible {
         right: 0px;}
     
     nav.hidden {
         right: -240px;}
-    
-    li.nav-element {
-        display: block;
-        margin: 0;
-        padding: 20px;}
     
     .navbar {
         float: none;
@@ -123,11 +130,14 @@ a:first-child > li.nav-element, a.first{
         padding: 0;
         margin: 0;}
     
-    .social {
-        width: 100%;
-        bottom: 50px;
+    li.nav-element {
         display: block;
-        float: none;
+        margin: 0;
+        padding: 20px;}
+    
+    .social {
+        display: block;
+        width: 100%;
         text-align: center;
         padding-bottom: 15px;
         padding-top: 17px;
@@ -136,7 +146,6 @@ a:first-child > li.nav-element, a.first{
     
     a.social-icon svg {
         width: 28px;}
-    
 }
 
 /* NAVBAR END*/
@@ -210,10 +219,10 @@ li.full-terms {
 /* mobile devices */
 @media (max-width: 560px) {
     
-    div.license, div.license:first-child, div.license:nth-child(3) {
+    .license, .license:first-child, .license:nth-child(3) {
         clear: both;
         width: 100%;
-        margin: 10px 0;}
+        margin: 0 0 10px 0;}
     
     p {
         clear: both;
