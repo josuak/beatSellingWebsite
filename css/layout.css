@@ -7,9 +7,6 @@ body {
     overflow: auto;}
 
 /* NAVBAR */
-#nav-toggle, nav-toggle-switch, nav-toggle-wrapper {
-    display: none;}
-
 nav {
     height: 68px;}
 
