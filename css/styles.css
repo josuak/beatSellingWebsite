@@ -4,7 +4,7 @@
     font-family: "AnticSlab-Regular";
     src: url(../fonts/AnticSlab-Regular.ttf);}
 
-* {
+#page {
     font-family: AnticSlab-Regular;}
 
 
@@ -122,14 +122,16 @@ h1 {
 
 /* CONTENT */
 #content {
-    /* .4 */
     background-color: hsla(0,0%,0%,.4);
     color: hsl(0,0%,90%);}
 
 #content a, footer a {
     color: hsl(0,0%,95%);}
 
-#content a:hover, footer a:hover, a.active {
+#content a:visited, footer a:visited {
+    color: hsl(0,0%,80%);}
+
+#content a:hover, footer a:hover {
     color: hsl(0,0%,75%);}
 
 del {
@@ -140,6 +142,7 @@ b {
 
 .border {
     box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
+
 
 /* beat licenses */
 .license {
@@ -155,6 +158,7 @@ b {
 .license-heading span {
     color: hsl(0, 0%, 80%);}
 
+
 /* about page */
 #heading-about-bg {
     background: url(../images/heading_about_bg.jpg) 65% 50%;
@@ -163,6 +167,15 @@ b {
 
 .heading {
     background-color: hsla(0, 0%, 0%, .1);}
+
+
+/* legal text */
+.legal-text {
+    font-family: sans-serif;}
+
+.legal-text h2 {
+    font-size: 28px;
+    text-decoration: underline;}
 
 /* CONTENT END */
 
