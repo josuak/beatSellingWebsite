@@ -274,8 +274,7 @@ footer a {
 
 footer a:last-child {
     margin: auto;
-    float: none;
-}
+    float: none;}
 
 /* mobile devices */
 @media (max-width: 580px) {
@@ -287,6 +286,9 @@ footer a:last-child {
         clear: both;
         float: none;
         display: block;}
+	
+	footer a:last-child {
+		display: inline;}
     
     footer p {
         margin-top: 10px;}
