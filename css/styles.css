@@ -123,13 +123,13 @@ h1 {
 /* CONTENT */
 #content {
     background-color: hsla(0,0%,0%,.4);
-    color: hsl(0,0%,90%);}
+    color: hsl(0, 0%, 90%);}
 
 #content a, footer a {
-    color: hsl(0,0%,95%);}
+    color: hsl(0, 0%, 95%);}
 
 #content a:visited, footer a:visited {
-    color: hsl(0,0%,80%);}
+    color: hsl(0, 0%, 80%);}
 
 #content a:hover, footer a:hover {
     color: hsl(0,0%,75%);}
