@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="page">
+    <header>
+        <!-- MOBILE NAV SWITCH -->
+        <div id="nav-toggle-wrapper">
+            <div id="nav-toggle-switch" class="normal" onclick="navSwitchToggle(); navToggle();">
+                <span></span>
+            </div>
+        </div>
+        <!-- MOBILE NAV SWITCH END -->
+        
+        <nav id="nav" class="hidden">
+            
+            <div id="nav-inner-wrapper">
+                
+                <ul class="navbar">
+                    <a href="index.html" onclick="navSwitchToggle(); navToggle();"><li class="nav-element">Shop</li></a>
+                    <a href="index.html#beat-licensing" onclick="navSwitchToggle(); navToggle();"><li class="nav-element">Licensing</li></a>
+                    <a href="music-releases.html"><li class="nav-element" onclick="navSwitchToggle(); navToggle();">Music Releases</li></a>
+                    <a href="about.html"><li class="nav-element" onclick="navSwitchToggle(); navToggle();">About</li></a>
+                </ul> 
+
+                <div class="social">
+                    <a href="#" class="social-icon first">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                        <path fill="#444444" d="M0.6,16.4c0-0.1-0.1-0.1-0.1-0.1c-0.1,0-0.1,0.1-0.1,0.1l-0.3,3l0.3,2.9c0,0.1,0.1,0.1,0.1,0.1
+                            c0.1,0,0.1-0.1,0.1-0.1L1,19.4L0.6,16.4z"/>
+                        <path fill="#444444" d="M5.7,13.7c-0.1,0-0.2,0.1-0.3,0.2l-0.3,5.5l0.3,3.5c0,0.1,0.1,0.2,0.3,0.2c0.1,0,0.2-0.1,0.3-0.2v0l0.3-3.5
+                            L6,13.9C6,13.8,5.9,13.7,5.7,13.7z"/>
+                        <path fill="#444444" d="M3.1,15.6c-0.1,0-0.2,0.1-0.2,0.2l-0.3,3.6l0.3,3.5c0,0.1,0.1,0.2,0.2,0.2c0.1,0,0.2-0.1,0.2-0.2l0.3-3.5
+                            l-0.3-3.6C3.3,15.6,3.2,15.6,3.1,15.6z"/>
+                        <path fill="#444444" d="M8.4,23.2c0.2,0,0.3-0.1,0.3-0.3L9,19.4l-0.3-7.3c0-0.2-0.1-0.3-0.3-0.3c-0.2,0-0.3,0.1-0.3,0.3l-0.2,7.3
+                            l0.2,3.5C8.1,23,8.3,23.2,8.4,23.2z"/>
+                        <path fill="#444444" d="M14,23.2c0.2,0,0.4-0.2,0.4-0.4v0v0l0.2-3.4L14.4,11c0-0.2-0.2-0.4-0.4-0.4c-0.2,0-0.4,0.2-0.4,0.4l-0.2,8.4
+                            c0,0,0.2,3.4,0.2,3.4C13.5,23,13.7,23.2,14,23.2z"/>
+                        <path fill="#444444" d="M11.2,23.2c0.2,0,0.4-0.2,0.4-0.4v0l0.2-3.4L11.5,12c0-0.2-0.2-0.4-0.4-0.4c-0.2,0-0.4,0.2-0.4,0.4l-0.2,7.3
+                            l0.2,3.4C10.8,23,11,23.2,11.2,23.2z"/>
+                        <path fill="#444444" d="M27.9,15c-0.6,0-1.1,0.1-1.6,0.3c-0.3-3.7-3.4-6.6-7.2-6.6c-0.9,0-1.8,0.2-2.6,0.5c-0.3,0.1-0.4,0.2-0.4,0.5
+                            v12.9c0,0.2,0.2,0.5,0.4,0.5c0,0,11.2,0,11.3,0c2.3,0,4.1-1.8,4.1-4.1S30.2,15,27.9,15z"/>
+                        </svg></a>
+
+                    <a href="#" class="social-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                        <path fill="#444444" d="M31.7,9.6c0,0-0.3-2.2-1.3-3.2c-1.2-1.3-2.6-1.3-3.2-1.4C22.7,4.7,16,4.7,16,4.7h0c0,0-6.7,0-11.2,0.3
+                            c-0.6,0.1-2,0.1-3.2,1.4c-1,1-1.3,3.2-1.3,3.2S0,12.2,0,14.8v2.4c0,2.6,0.3,5.2,0.3,5.2s0.3,2.2,1.3,3.2c1.2,1.3,2.8,1.2,3.5,1.4
+                            C7.7,27.2,16,27.3,16,27.3s6.7,0,11.2-0.3c0.6-0.1,2-0.1,3.2-1.4c1-1,1.3-3.2,1.3-3.2s0.3-2.6,0.3-5.2v-2.4
+                            C32,12.2,31.7,9.6,31.7,9.6z M12.7,20.2l0-9l8.6,4.5L12.7,20.2z"/>
+                        </svg></a>
+
+                    <a href="#" class="social-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                        <path fill="#444444" d="M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.2,3
+                            c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,10.8,5.5,8.2,2.2,4.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+                            c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+                            c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C2.9,27.9,6.4,29,10.1,29c12.1,0,18.7-10,18.7-18.7
+                            c0-0.3,0-0.6,0-0.8C30,8.5,31.1,7.4,32,6.1z"/>
+                        </svg></a>
+
+                    <a href="#" class="social-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                        <path fill="#444444" d="M28.2,0H3.8C1.7,0,0,1.7,0,3.8v24.4C0,30.3,1.7,32,3.8,32h24.4c2.1,0,3.8-1.7,3.8-3.8V3.8
+                            C32,1.7,30.3,0,28.2,0z M24,4h3c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1h-3c-0.6,0-1-0.4-1-1V5C23,4.4,23.4,4,24,4z M16,9.9
+                            c3.4,0,6.2,2.7,6.2,6.1c0,3.4-2.8,6.1-6.2,6.1c-3.4,0-6.2-2.7-6.2-6.1C9.9,12.6,12.6,9.9,16,9.9z M28,29H4c-0.6,0-1-0.4-1-1V13h4
+                            c-0.5,0.8-0.7,2.1-0.7,3c0,5.4,4.4,9.7,9.7,9.7c5.4,0,9.7-4.4,9.7-9.7c0-0.9-0.1-2.3-0.8-3h4v15C29,28.6,28.6,29,28,29z"/>
+                        </svg></a>
+                </div>
+                
+            </div>
+            
+        </nav>
+
+    </header>
+    
+
+    <div id="content">
+        
+        <section>
+            
+            <article class="legal-text" id="basic-lease">
+				<h2>Basic Lease</h2>
+				<p>THIS LICENSE AGREEMENT is made on&nbsp;<strong>Sun, 13 Nov 2016 10:53:08 -0500</strong>&nbsp;("Effective Date") by and between&nbsp;<strong>John Doe</strong>&nbsp;(hereinafter referred to as the "Licensee") also, if applicable, professionally known as&nbsp;<strong>John Doe Music</strong>, and&nbsp;<strong>Josua Kr&auml;mer (prodbyjozu)</strong>&nbsp;("Songwriter"). (hereinafter referred to as the "Licensor"). Licensor warrants that it controls the mechanical rights in and to the copyrighted musical work entitled&nbsp;<strong>Sample Track Title</strong>&nbsp;("Composition") as of and prior to the date first written above. The Composition, including the music thereof, was composed by&nbsp;<strong>Josua Kr&auml;mer (prodbyjozu)</strong>&nbsp;("Songwriter") managed under the Licensor.</p>
+				<p><strong>All licenses are non-refundable and non-transferable.</strong></p>
+				
+				<p><strong>Master Use.</strong>&nbsp;The Licensor hereby grants to License a non-exclusive license (this "License) to record vocal synchronization to the Composition partly or in its entirety and substantially in its original form ("Master Recording")</p>
+				
+				<p><strong>Mechanical Rights.</strong>&nbsp;The Licensor hereby grants to Licensee a non-exclusive license to use Master Recording in the reproduction, duplication, manufacture, and distribution of phonograph records, cassette tapes, compact disk, digital downloads, other miscellaneous audio and digital recordings, and any lifts and versions thereof (collectively, the "Recordings", and individually, a "Recordings") worldwide for up to the pressing or selling a total of&nbsp;<strong>Two Thousand, Five Hundred</strong>&nbsp;(<strong>2500</strong>) copies of such Recordings or any combination of such Recordings, condition upon the payment to the Licensor a sum of&nbsp;<strong>Fifteen</strong>&nbsp;dollars (<strong>$15</strong>), receipt of which is confirmed. Additionally licensor shall be permitted to distribute&nbsp;<strong>Unlimited free</strong>&nbsp;internet downloads or streams for non-profit and non-commercial use. This license allows up to&nbsp;<strong>Fifty Thousand</strong>&nbsp;(<strong>50000</strong>) monetized audio streams to sites like (Spotify, RDIO, Rhapsody) but not eligible for monetization on YouTube.</p>
+				
+				<p><strong>Performance Rights.</strong>&nbsp;The Licensor here by grants to Licensee a non-exclusive license to use the Master Recording in&nbsp;<strong>Unlimited</strong>&nbsp;non-profit performances, shows, or concerts. Licensee&nbsp;<strong>may</strong>&nbsp;receive compensation from performances with this license.</p>
+				
+				<p><strong>Synchronization Rights.</strong>&nbsp;The Licensor hereby grants limited synchronization rights for&nbsp;<strong>One</strong>&nbsp;(<strong>1</strong>) music video streamed online (Youtube, Vimeo, etc..) for up to&nbsp;<strong>50000 non-monetized</strong>&nbsp;video streams on all total sites. A separate synchronization license will need to be purchased for distribution of video to Television, Film or Video game.</p>
+				
+				<p><strong>Broadcast Rights.</strong>&nbsp;The Licensor hereby grants to Licensee no broadcasting rights.</p>
+				
+				<p><strong>Credit.</strong>&nbsp;Licensee shall acknowledge the original authorship of the Composition appropriately and reasonably in all media and performance formats under the name "<strong>Josua Kr&auml;mer (prodbyjozu)</strong>" in writing where possible and vocally otherwise.</p>
+				
+				<p><strong>Consideration.</strong>&nbsp;In consideration for the rights granted under this agreement, Licensee shall pay to licensor the sum of&nbsp;<strong>$15</strong>&nbsp;US dollars and other good and valuable consideration, payable to&nbsp;<strong>"Josua Kr&auml;mer (prodbyjozu)"</strong>, receipt of which is hereby acknowledged. If the Licensee fails to account to the Licensor, timely complete the payments provided for hereunder, or perform its other obligations hereunder, including having insufficient bank balance, the licensor shall have the right to terminate License upon written notice to the Licensee. Such termination shall render the recording, manufacture and/or distribution of Recordings for which monies have not been paid subject to and actionable infringements under applicable law, including, without limitation, the United States Copyright Act, as amended.</p>
+				
+				<p><strong>Indemnification.</strong>&nbsp;Accordingly, Licensee agrees to indemnify and hold Licensor harmless from and against any and all claims, losses, damages, costs, expenses, including, without limitation, reasonable attorney's fees, arising of or resulting from a claimed breach of any of Licensee's representations, warranties or agreements hereunder.</p>
+				<p><strong>Miscellaneous.</strong>&nbsp;This license is non-transferable and is limited to the Composition specified above, does not convey or grant any right of public performance for profit, constitutes the entire agreement between the Licensor and the Licensee relating to the Composition, and shall be binding upon both the Licensor and the Licensee and their respective successors, assigns, and legal representatives.</p>
+				
+				<p><strong>Governing Law.</strong>&nbsp;This License is governed by and shall be construed under the law of the North Rhine-Westphalia Germany, without regard to the conflicts of laws principles thereof.</p>
+				
+				<p><strong>Term.</strong>&nbsp;Executed by the Licensor and the Licensee, to be effective as for all purposes as of the Effective Date first mentioned above and shall terminate exactly ten (10) years from this date.</p>
+            </article>
+			
+			
+			<article class="legal-text" id="premium-lease">
+				<h2>Premium Lease</h2>
+				<p>THIS LICENSE AGREEMENT is made on&nbsp;<strong>Sun, 13 Nov 2016 11:00:15 -0500</strong>&nbsp;("Effective Date") by and between&nbsp;<strong>John Doe</strong>&nbsp;(hereinafter referred to as the "Licensee") also, if applicable, professionally known as&nbsp;<strong>John Doe Music</strong>, and&nbsp;<strong>Josua Kr&auml;mer (prodbyjozu)</strong>&nbsp;("Songwriter"). (hereinafter referred to as the "Licensor"). Licensor warrants that it controls the mechanical rights in and to the copyrighted musical work entitled&nbsp;<strong>Sample Track Title</strong>&nbsp;("Composition") as of and prior to the date first written above. The Composition, including the music thereof, was composed by&nbsp;<strong>Josua Kr&auml;mer (prodbyjozu)</strong>&nbsp;("Songwriter") managed under the Licensor.</p>
+<p><strong>All licenses are non-refundable and non-transferable.</strong></p>
+
+<p><strong>Master Use.</strong>&nbsp;The Licensor hereby grants to License a non-exclusive license (this "License) to record vocal synchronization to the Composition partly or in its entirety and substantially in its original form ("Master Recording")</p>
+
+<p><strong>Mechanical Rights.</strong>&nbsp;The Licensor hereby grants to Licensee a non-exclusive license to use Master Recording in the reproduction, duplication, manufacture, and distribution of phonograph records, cassette tapes, compact disk, digital downloads, other miscellaneous audio and digital recordings, and any lifts and versions thereof (collectively, the "Recordings", and individually, a "Recordings") worldwide for up to the pressing or selling a total of&nbsp;<strong>Five Thousand</strong>&nbsp;(<strong>5000</strong>) copies of such Recordings or any combination of such Recordings, condition upon the payment to the Licensor a sum of&nbsp;<strong>Thirty</strong>&nbsp;dollars (<strong>$30</strong>), receipt of which is confirmed. Additionally licensor shall be permitted to distribute&nbsp;<strong>Unlimited free</strong>internet downloads or streams for non-profit and non-commercial use. This license allows up to&nbsp;<strong>Two Hundred And Fifty Thousand</strong>&nbsp;(<strong>250000</strong>) monetized audio streams to sites like (Spotify, RDIO, Rhapsody) but not eligible for monetization on YouTube.</p>
+
+<p><strong>Performance Rights.</strong>&nbsp;The Licensor here by grants to Licensee a non-exclusive license to use the Master Recording in&nbsp;<strong>Unlimited</strong>&nbsp;non-profit performances, shows, or concerts. Licensee&nbsp;<strong>may</strong>&nbsp;receive compensation from performances with this license.</p>
+
+<p><strong>Synchronization Rights.</strong>&nbsp;The Licensor hereby grants limited synchronization rights for&nbsp;<strong>One</strong>&nbsp;(<strong>1</strong>) music video streamed online (Youtube, Vimeo, etc..) for up to&nbsp;<strong>250000 non-monetized</strong>&nbsp;video streams on all total sites. A separate synchronization license will need to be purchased for distribution of video to Television, Film or Video game.</p>
+
+<p><strong>Broadcast Rights.</strong>&nbsp;The Licensor hereby grants to Licensee broadcasting rights up to 2 Radio Stations.</p>
+
+<p><strong>Credit.</strong>&nbsp;Licensee shall acknowledge the original authorship of the Composition appropriately and reasonably in all media and performance formats under the name "<strong>Josua Kr&auml;mer (prodbyjozu)</strong>" in writing where possible and vocally otherwise.</p>
+
+<p><strong>Consideration.</strong>&nbsp;In consideration for the rights granted under this agreement, Licensee shall pay to licensor the sum of&nbsp;<strong>$30</strong>&nbsp;US dollars and other good and valuable consideration, payable to&nbsp;<strong>"Josua Kr&auml;mer (prodbyjozu)"</strong>, receipt of which is hereby acknowledged. If the Licensee fails to account to the Licensor, timely complete the payments provided for hereunder, or perform its other obligations hereunder, including having insufficient bank balance, the licensor shall have the right to terminate License upon written notice to the Licensee. Such termination shall render the recording, manufacture and/or distribution of Recordings for which monies have not been paid subject to and actionable infringements under applicable law, including, without limitation, the United States Copyright Act, as amended.</p>
+
+<p><strong>Indemnification.</strong>&nbsp;Accordingly, Licensee agrees to indemnify and hold Licensor harmless from and against any and all claims, losses, damages, costs, expenses, including, without limitation, reasonable attorney's fees, arising of or resulting from a claimed breach of any of Licensee's representations, warranties or agreements hereunder.</p>
+
+<p><strong>Miscellaneous.</strong>&nbsp;This license is non-transferable and is limited to the Composition specified above, does not convey or grant any right of public performance for profit, constitutes the entire agreement between the Licensor and the Licensee relating to the Composition, and shall be binding upon both the Licensor and the Licensee and their respective successors, assigns, and legal representatives.</p>
+
+<p><strong>Governing Law.</strong>&nbsp;This License is governed by and shall be construed under the law of the North Rhine-Westphalia Germany, without regard to the conflicts of laws principles thereof.</p>
+
+<p><strong>Term.</strong>&nbsp;Executed by the Licensor and the Licensee, to be effective as for all purposes as of the Effective Date first mentioned above and shall terminate exactly ten (10) years from this date.</p>
+
+<p><strong>Publishing.</strong>&nbsp;Licensor grants Licensee&nbsp;<strong>0%</strong>&nbsp;of publishing rights. Licensor maintains all publishing rights.</p>
+            </article>
+			
+			
+			<article class="legal-text" id="unlimited-lease">
+				<h2>Unlimited Lease</h2>
+				<p>THIS LICENSE AGREEMENT is made on&nbsp;<strong>Sun, 13 Nov 2016 11:01:35 -0500</strong>&nbsp;("Effective Date") by and between&nbsp;<strong>John Doe</strong>&nbsp;(hereinafter referred to as the "Licensee") also, if applicable, professionally known as&nbsp;<strong>John Doe Music</strong>, and&nbsp;<strong>Josua Kr&auml;mer (prodbyjozu)</strong>&nbsp;("Songwriter"). (hereinafter referred to as the "Licensor"). Licensor warrants that it controls the mechanical rights in and to the copyrighted musical work entitled&nbsp;<strong>Sample Track Title</strong>&nbsp;("Composition") as of and prior to the date first written above. The Composition, including the music thereof, was composed by&nbsp;<strong>Josua Kr&auml;mer (prodbyjozu)</strong>&nbsp;("Songwriter") managed under the Licensor.</p>
+<p><strong>All licenses are non-refundable and non-transferable.</strong></p>
+
+<p><strong>Master Use.</strong>&nbsp;The Licensor hereby grants to License a non-exclusive license (this "License) to record vocal synchronization to the Composition partly or in its entirety and substantially in its original form ("Master Recording")</p>
+
+<p><strong>Mechanical Rights.</strong>&nbsp;The Licensor hereby grants to Licensee a non-exclusive license to use Master Recording in the reproduction, duplication, manufacture, and distribution of phonograph records, cassette tapes, compact disk, digital downloads, other miscellaneous audio and digital recordings, and any lifts and versions thereof (collectively, the "Recordings", and individually, a "Recordings") worldwide for up to the pressing or selling a total of&nbsp;<strong>~</strong>&nbsp;(<strong>Unlimited</strong>) copies of such Recordings or any combination of such Recordings, condition upon the payment to the Licensor a sum of&nbsp;<strong>One Hundred</strong>&nbsp;dollars (<strong>$100</strong>), receipt of which is confirmed. Additionally licensor shall be permitted to distribute&nbsp;<strong>Unlimited free</strong>&nbsp;internet downloads or streams for non-profit and non-commercial use. This license allows up to&nbsp;<strong>~</strong>&nbsp;(<strong>Unlimited</strong>) monetized audio streams to sites like (Spotify, RDIO, Rhapsody) but not eligible for monetization on YouTube.</p>
+
+<p><strong>Performance Rights.</strong>&nbsp;The Licensor here by grants to Licensee a non-exclusive license to use the Master Recording in&nbsp;<strong>Unlimited</strong>&nbsp;non-profit performances, shows, or concerts. Licensee&nbsp;<strong>may</strong>&nbsp;receive compensation from performances with this license.</p>
+
+<p><strong>Synchronization Rights.</strong>&nbsp;The Licensor hereby grants limited synchronization rights for&nbsp;<strong>~</strong>&nbsp;(<strong>Unlimited</strong>) music video streamed online (Youtube, Vimeo, etc..) for up to&nbsp;<strong>Unlimited non-monetized</strong>&nbsp;video streams on all total sites. A separate synchronization license will need to be purchased for distribution of video to Television, Film or Video game.</p>
+
+<p><strong>Broadcast Rights.</strong>&nbsp;The Licensor hereby grants to Licensee broadcasting rights up to Unlimited Radio Stations.</p>
+
+<p><strong>Credit.</strong>&nbsp;Licensee shall acknowledge the original authorship of the Composition appropriately and reasonably in all media and performance formats under the name "<strong>Josua Kr&auml;mer (prodbyjozu)</strong>" in writing where possible and vocally otherwise.</p>
+
+<p><strong>Consideration.</strong>&nbsp;In consideration for the rights granted under this agreement, Licensee shall pay to licensor the sum of&nbsp;<strong>$100</strong>&nbsp;US dollars and other good and valuable consideration, payable to&nbsp;<strong>"Josua Kr&auml;mer (prodbyjozu)"</strong>, receipt of which is hereby acknowledged. If the Licensee fails to account to the Licensor, timely complete the payments provided for hereunder, or perform its other obligations hereunder, including having insufficient bank balance, the licensor shall have the right to terminate License upon written notice to the Licensee. Such termination shall render the recording, manufacture and/or distribution of Recordings for which monies have not been paid subject to and actionable infringements under applicable law, including, without limitation, the United States Copyright Act, as amended.</p>
+
+<p><strong>Indemnification.</strong>&nbsp;Accordingly, Licensee agrees to indemnify and hold Licensor harmless from and against any and all claims, losses, damages, costs, expenses, including, without limitation, reasonable attorney's fees, arising of or resulting from a claimed breach of any of Licensee's representations, warranties or agreements hereunder.</p>
+
+<p><strong>Miscellaneous.</strong>&nbsp;This license is non-transferable and is limited to the Composition specified above, does not convey or grant any right of public performance for profit, constitutes the entire agreement between the Licensor and the Licensee relating to the Composition, and shall be binding upon both the Licensor and the Licensee and their respective successors, assigns, and legal representatives.</p>
+
+<p><strong>Governing Law.</strong>&nbsp;This License is governed by and shall be construed under the law of the North Rhine-Westphalia Germany, without regard to the conflicts of laws principles thereof.</p>
+
+<p><strong>Term.</strong>&nbsp;Executed by the Licensor and the Licensee, to be effective as for all purposes as of the Effective Date first mentioned above and shall terminate exactly ten (10) years from this date.</p>
+
+<p><strong>Publishing.</strong>&nbsp;Licensor grants Licensee&nbsp;<strong>0%</strong>&nbsp;of publishing rights. Licensor maintains all publishing rights.</p>
+            </article>
+			
+        </section>
+        
+    </div>
+    
+    
+   	<footer>
+        <div id="footer">
+            <a href="image-licenses.html#content">Image Licenses</a>
+            <a href="datenschutz.html">Datenschutz/Privacy</a>
+            <a href="agb.html">AGB</a>
+            <a href="impressum.html">Impressum</a>
+            <p>&copy; 2016 <a href="index.html">prodbyjozu.com</a></p>
+         </div>
+    </footer>
+	
+</div>
+<script src="js/mobile-nav.js"></script>
+<script src="js/analytics.js"></script>
+</body>
+</html>

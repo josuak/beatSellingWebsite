@@ -152,6 +152,11 @@ b {
 	border-bottom-width: 2px;}
 
 
+/* shop */
+iframe.shop {
+	filter: grayscale(100%);}
+
+
 /* beat licenses */
 .license {
     box-shadow: inset 0 0 0 1px hsl(0,0%,90%);}
