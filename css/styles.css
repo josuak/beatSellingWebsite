@@ -10,8 +10,8 @@
 
 /* BACKGROUND */ 
 body {
-    background: black;
-    background-image: url(../images/background_main.jpg);
+    background: rgb(0, 2, 29);
+    background-image: url(../images/background_main_sunset.jpg);
     background-repeat: no-repeat;
     background-position: center top;}
 
