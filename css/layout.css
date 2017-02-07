@@ -149,7 +149,7 @@ a:first-child > li.nav-element, a.first{
 
 
 #banner {
-    padding: 65px 10px;
+    padding: 60px 10px;
     text-align: center;
     overflow: none;}
 
@@ -198,7 +198,7 @@ p.indent {
 
 /* beat licenses */
 .license {
-    width: 32%;
+    width: 23.5%;
     margin: 0 1% 10px 1%;
     float: left;
     text-align: center;}
@@ -206,7 +206,7 @@ p.indent {
 .license:first-child {
     margin-left: 0%;}
 
-.license:nth-child(3) {
+.license:nth-child(4) {
     margin-right: 0%;}
 
 .license h3 {
@@ -229,7 +229,7 @@ li.full-terms {
 /* mobile devices */
 @media (max-width: 560px) {
     
-    .license, .license:first-child, .license:nth-child(3) {
+    .license, .license:first-child, .license:nth-child(3), .license:nth-child(4) {
         clear: both;
         width: 100%;
         margin: 0 0 10px 0;}
